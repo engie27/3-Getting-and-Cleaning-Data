@@ -51,16 +51,16 @@ colnames(subjects) <- 'subject'
 print("Combining subject, data and data labels lists into one list and writing the list to CSV")
 #combine disperate lists into one list and write the file
 data <- cbind(subjects, xMeanStdDev, y)
-write.csv(data, './combinedData.csv', row.names = FALSE)
+write.txt(data, './combinedData.txt', row.names = FALSE)
 
 print("Creating a tidy data set of variable averages and writing to CSV")
 #create a second, independent tidy data set with the average of each variable for each activity and each subject.
 average <- aggregate(x=data, by=list(activities=data$activity, subj=data$subject), FUN=mean)
 #remove duplicated columns
 average <- average[, !(colnames(average.df) %in% c("subj", "activity"))]
-write.csv(average, './averagedData.csv', row.names = FALSE)
+write.table(average, './averagedData.txt', row.names = FALSE)
 
-print (paste("Done, CSVs 'combinedData.csv' and 'averagedData.csv' have been created in",getwd()))
+print (paste("Done, CSVs 'combinedData.txt' and 'averagedData.txt' have been created in",getwd()))
 
 
 

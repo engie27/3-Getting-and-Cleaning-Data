@@ -11,11 +11,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Process
 -------------------------
-Running `run_analysis.R` creates to CSVs in the working directory.
+Running `run_analysis.R` creates two text files in the working directory.
 
-`combinedData.csv` contains 68 variables with 10299 observations.
+`combinedData.txt` contains 68 variables with 10299 observations.
 
-`averagedData.csv` contains 70 variables with 180 observations.
+`averagedData.txt` contains 70 variables with 180 observations.
 
 Variables
 -------------------------

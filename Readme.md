@@ -36,5 +36,5 @@ High level overview of the steps `run_analysis.R` performs...
 7. It then cleans up the variable names.
 8. It then reads in and cleans up the activity names.
 9. It then replaces the activity id with the human readable activity name.
-10. It then combines the lists (subjects, test & train data, test & train data labels) and writes the result as to a CSV in the working directory (`combinedData.csv`).
-11. It then creates a new data frame that contains averages of all the variables and writes the result to a CSV in the working directory (`averagedData.csv`).
+10. It then combines the lists (subjects, test & train data, test & train data labels) and writes the result as to a text in the working directory (`combinedData.txt`).
+11. It then creates a new data frame that contains averages of all the variables and writes the result to a text file in the working directory (`averagedData.txt`).
