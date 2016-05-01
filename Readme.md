@@ -25,4 +25,16 @@ You should create one R script called `run_analysis.R` that does the following.
 
 run_analysis.R
 -----------------
+High level overview of the steps `run_analysis.R` performs...
 
+1. The script downloads and unzips the UCI HAR Dataset dataset to the working directrory.
+2. It then combines the test and train data into one list. 
+3. It then combines the test and train data labels into one list.
+4. It then combines the test and train subjects into one list.
+5. It then combines the test and train features (measurements) into one list.
+6. It then pulls out only *mean* and *standard deviation* measurements.
+7. It then cleans up the variable names.
+8. It then reads in and cleans up the activity names.
+9. It then replaces the activity id with the human readable activity name.
+10. It then combines the lists (subjects, test & train data, test & train data labels) and writes the result as to a CSV in the working directory (`combinedData.csv`).
+11. It then creates a new data frame that contains averages of all the variables and writes the result to a CSV in the working directory (`averagedData.csv`).
