@@ -27,12 +27,12 @@ run_analysis.R
 -----------------
 High level overview of the steps `run_analysis.R` performs...
 
-1. The script downloads and unzips the UCI HAR Dataset dataset to the working directrory.
+1. The script downloads and unzips the **UCI HAR Dataset** dataset to the working directrory.
 2. It then combines the test and train data into one list. 
 3. It then combines the test and train data labels into one list.
 4. It then combines the test and train subjects into one list.
 5. It then combines the test and train features (measurements) into one list.
-6. It then pulls out only *mean* and *standard deviation* measurements.
+6. It then pulls out only **mean** and **standard deviation** measurements.
 7. It then cleans up the variable names.
 8. It then reads in and cleans up the activity names.
 9. It then replaces the activity id with the human readable activity name.
