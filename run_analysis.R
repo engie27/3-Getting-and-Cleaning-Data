@@ -58,7 +58,7 @@ print("Creating a tidy data set of variable averages and writing to CSV")
 average <- aggregate(x=data, by=list(activities=data$activity, subj=data$subject), FUN=mean)
 #remove duplicated columns
 average <- average[, !(colnames(average.df) %in% c("subj", "activity"))]
-write.csv(average, './averagedData.txt', row.names = FALSE)
+write.csv(average, './averagedData.csv', row.names = FALSE)
 
 print (paste("Done, CSVs 'combinedData.csv' and 'averagedData.csv' have been created in",getwd()))
 
